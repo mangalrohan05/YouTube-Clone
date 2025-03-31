@@ -1,34 +1,47 @@
-.sidebar{
-    background-color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 72px;
-    top: 54px;
-    z-index: 200;
-    padding-top: 5 px;
-}
 
-.box{
+.sidebar-link {
+    font-size: 10px;
     height: 74px;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 
     cursor: pointer;
-}
+  }
 
-.box:hover{
-    background-color: rgb(237, 237, 237);
-}
+  .sidebar-link:hover {
+    background-color: rgb(238, 238, 238);
+  }
 
-.box img{
+  .sidebar-link img {
     height: 24px;
-    margin-bottom: 4px;
-}
+    margin-bottom: 6.5px;
+  }
 
-.box div{
-    font-family: Roboto, Arial;
-    font-size: 10px;
-}
+  .tooltip {
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+
+    bottom: -50px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tooltip-container:hover .tooltip {
+    opacity: 1;
+  }
