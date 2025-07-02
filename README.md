@@ -2,6 +2,9 @@
 
 A simple front-end clone of YouTube built using **HTML & CSS**. This project replicates the basic UI of YouTube, showcasing a structured layout with embedded video elements.
 
+## 🔗 Live Preview
+👉 [View Project Online](https://mangalrohan05.github.io/YouTube-Clone/)
+
 ## 📌 Features
 - **Responsive Design** for multiple screen sizes
 - **Video Thumbnails** with hover effects
